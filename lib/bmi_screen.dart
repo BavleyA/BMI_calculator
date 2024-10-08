@@ -86,9 +86,60 @@ class _BmiScreenState extends State<BmiScreen> {
             ),
           ),
           Expanded(
-            child: Container(
-              width: double.infinity,
-              color: Colors.green,
+            child: Padding(
+              padding: const EdgeInsets.symmetric(
+                horizontal: 20.0,
+              ),
+              child: Container(
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(10.0),
+                  color: Colors.grey,
+                ),
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Text(
+                      'HEIGHT',
+                      style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                        fontSize: 25.0,
+                      ),
+                    ),
+                    Row(
+                      crossAxisAlignment: CrossAxisAlignment.baseline,
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      textBaseline: TextBaseline.alphabetic,
+                      children: [
+                        Text(
+                          '180',
+                          style: TextStyle(
+                            fontWeight: FontWeight.w900,
+                            fontSize: 40.0,
+                          ),
+                        ),
+                        SizedBox(
+                          width: 5.0,
+                        ),
+                        Text(
+                          'CM',
+                          style: TextStyle(
+                            fontWeight: FontWeight.bold,
+                            fontSize: 20.0,
+                          ),
+                        ),
+                      ],
+                    ),
+                    Slider(
+                      value: 120.0,
+                      max: 220.0,
+                      min: 50.0,
+                      onChanged: (value) {
+                        print(value.round());
+                      },
+                    ),
+                  ],
+                ),
+              ),
             ),
           ),
           Expanded(
