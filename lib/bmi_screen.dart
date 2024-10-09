@@ -156,6 +156,7 @@ class _BmiScreenState extends State<BmiScreen> {
                           height = value;
                         });
                       },
+                      activeColor: Colors.blue,
                     ),
                   ],
                 ),
