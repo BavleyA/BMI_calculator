@@ -1,3 +1,6 @@
+import 'dart:math';
+
+import 'package:bmi_calculator/bmi_result_screen.dart';
 import 'package:flutter/material.dart';
 
 
@@ -19,10 +22,12 @@ class _BmiScreenState extends State<BmiScreen> {
         title: Text(
           'BMI Calculator',
         ),
+        backgroundColor: Colors.blue,
 
       ),
       body: Column(
         children: [
+
           Expanded(
             child: Padding(
               padding: const EdgeInsets.all(20.0),
@@ -200,6 +205,7 @@ class _BmiScreenState extends State<BmiScreen> {
                                    age--;
                                  });
                                 },
+                                heroTag: 'age-',
                                 mini: true,
                                 child: Icon(
                                   Icons.remove,
@@ -213,6 +219,7 @@ class _BmiScreenState extends State<BmiScreen> {
                                    age++;
                                  });
                                 },
+                                heroTag: 'age+',
                                 mini: true,
                                 child: Icon(
                                   Icons.add,
@@ -261,6 +268,7 @@ class _BmiScreenState extends State<BmiScreen> {
                                     weight--;
                                   });
                                 },
+                                heroTag: 'weight-',
                                 mini: true,
                                 child: Icon(
                                   Icons.remove,
@@ -275,6 +283,7 @@ class _BmiScreenState extends State<BmiScreen> {
                                     weight++;
                                   });
                                 },
+                                heroTag: 'weight+',
                                 mini: true,
                                 child: Icon(
                                   Icons.add,
@@ -295,7 +304,21 @@ class _BmiScreenState extends State<BmiScreen> {
             width: double.infinity,
             color: Colors.blue,
             child: MaterialButton(
-              onPressed: (){},
+              onPressed: (){
+                var result = weight / pow(height/100 , 2);
+                print(result.round());
+                
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => BmiResult(
+                      age: age,
+                      isMale: isMale,
+                      result: result.round(),
+                    ),
+                  ),
+                );
+              },
               height: 50.0,
               child: Text(
                 'CALCULATE',

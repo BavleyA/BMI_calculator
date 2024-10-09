@@ -2,14 +2,23 @@ import 'package:flutter/material.dart';
 
 
 class BmiResult extends StatelessWidget {
-  const BmiResult({super.key});
+
+  final int result;
+  final bool isMale;
+  final int age;
+
+  BmiResult({
+    required this.result,
+    required this.isMale,
+    required this.age,
+});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         title: Text(
-         'Result',
+         'Your Result',
         ),
       ),
       body: Center(
@@ -17,21 +26,21 @@ class BmiResult extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Text(
-              'Gender : Male',
+              'Gender : ${isMale ? 'Male' : 'Feamale'}',
               style: TextStyle(
                 fontWeight: FontWeight.bold,
                 fontSize: 25.0,
               ),
             ),
             Text(
-              'Result : 55',
+              'Result : $result',
               style: TextStyle(
                 fontWeight: FontWeight.bold,
                 fontSize: 25.0,
               ),
             ),
             Text(
-              'Age : 20',
+              'Age : $age',
               style: TextStyle(
                 fontWeight: FontWeight.bold,
                 fontSize: 25.0,
