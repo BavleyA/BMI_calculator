@@ -62,7 +62,7 @@ class _BmiScreenState extends State<BmiScreen> {
                         ),
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(10.0,),
-                          color: isMale ? Colors.blue : Colors.grey,
+                          color: isMale ? Colors.blue : Colors.grey[350],
                         ),
                       ),
                     ),
@@ -99,7 +99,7 @@ class _BmiScreenState extends State<BmiScreen> {
                         ),
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(10.0,),
-                          color: isMale ? Colors.grey : Colors.blue,
+                          color: isMale ? Colors.grey[350] : Colors.blue,
                         ),
                       ),
                     ),
@@ -116,7 +116,7 @@ class _BmiScreenState extends State<BmiScreen> {
               child: Container(
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(10.0),
-                  color: Colors.grey,
+                  color: Colors.grey[350],
                 ),
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.center,
@@ -177,7 +177,7 @@ class _BmiScreenState extends State<BmiScreen> {
                     child: Container(
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(10.0,),
-                        color: Colors.grey,
+                        color: Colors.grey[350],
                       ),
                       child: Column(
                         mainAxisAlignment: MainAxisAlignment.center,
@@ -240,7 +240,7 @@ class _BmiScreenState extends State<BmiScreen> {
                     child: Container(
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(10.0,),
-                        color: Colors.grey,
+                        color: Colors.grey[350],
                       ),
                       child: Column(
                         mainAxisAlignment: MainAxisAlignment.center,
