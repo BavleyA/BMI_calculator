@@ -143,14 +143,112 @@ class _BmiScreenState extends State<BmiScreen> {
             ),
           ),
           Expanded(
-            child: Container(
-              width: double.infinity,
-              color: Colors.blue,
+            child: Padding(
+              padding: const EdgeInsets.all(20.0),
+              child: Row(
+                children: [
+                  Expanded(
+                    child: Container(
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(10.0,),
+                        color: Colors.grey,
+                      ),
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          Text(
+                            'AGE',
+                            style: TextStyle(
+                              fontSize: 25.0,
+                              fontWeight: FontWeight.bold,
+                            ),
+                          ),
+                          Text(
+                            '180',
+                            style: TextStyle(
+                              fontWeight: FontWeight.w900,
+                              fontSize: 40.0,
+                            ),
+                          ),
+                          Row(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: [
+                              FloatingActionButton(
+                                onPressed: () {},
+                                mini: true,
+                                child: Icon(
+                                  Icons.remove,
+                                ),
+                              ),
+                              FloatingActionButton(
+                                onPressed: (){},
+                                mini: true,
+                                child: Icon(
+                                  Icons.add,
+                                ),
+                              ),
+                            ],
+                          ),
+                        ],
+                      ),
+                    ),
+                  ),
+                  SizedBox(
+                    width: 20.0,
+                  ),
+                  Expanded(
+                    child: Container(
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(10.0,),
+                        color: Colors.grey,
+                      ),
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          Text(
+                            'AGE',
+                            style: TextStyle(
+                              fontSize: 25.0,
+                              fontWeight: FontWeight.bold,
+                            ),
+                          ),
+                          Text(
+                            '180',
+                            style: TextStyle(
+                              fontWeight: FontWeight.w900,
+                              fontSize: 40.0,
+                            ),
+                          ),
+                          Row(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: [
+                              FloatingActionButton(
+                                onPressed: () {},
+                                mini: true,
+                                child: Icon(
+                                  Icons.remove,
+                                ),
+                              ),
+                              FloatingActionButton(
+                                onPressed: (){},
+                                mini: true,
+                                child: Icon(
+                                  Icons.add,
+                                ),
+                              ),
+                            ],
+                          ),
+                        ],
+                      ),
+                    ),
+                  ),
+                ],
+              ),
             ),
           ),
           Container(
             width: double.infinity,
-            color: Colors.red,
+            color: Colors.blue,
             child: MaterialButton(
               onPressed: (){},
               height: 50.0,
