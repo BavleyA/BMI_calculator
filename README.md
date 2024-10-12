@@ -1,4 +1,4 @@
-# BMI Calculator 💪
+# BMI Calculator 
 
 A **BMI Calculator** app built with **Flutter**! This app helps users calculate their Body Mass Index (BMI) based on their weight and height. The result includes a category (e.g., "Underweight", "Normal", "Overweight", etc.) based on standard BMI ranges.
 
@@ -15,10 +15,11 @@ A **BMI Calculator** app built with **Flutter**! This app helps users calculate 
 
 ## 🎯 How it Works
 
-1. Enter **weight** in kilograms.
-2. Enter **height** in centimeters.
-3. Click **Calculate**.
-4. The app displays:
+1. Choose Your **gender**
+2. Enter **weight** in kilograms.
+3. Enter **height** in centimeters.
+4. Click **Calculate**.
+5. The app displays:
    - BMI Value
    - BMI Category (e.g., "Normal", "Overweight")
 
