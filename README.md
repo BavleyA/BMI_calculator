@@ -15,11 +15,12 @@ A **BMI Calculator** app built with **Flutter**! This app helps users calculate 
 
 ## 🎯 How it Works
 
-1. Choose Your **gender**
+1. Choose **gender**
 2. Enter **weight** in kilograms.
 3. Enter **height** in centimeters.
-4. Click **Calculate**.
-5. The app displays:
+4. Enter **age**
+5. Click **Calculate**.
+6. The app displays:
    - BMI Value
    - BMI Category (e.g., "Normal", "Overweight")
 
